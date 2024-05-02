@@ -2,7 +2,7 @@
 using namespace std;
 
 //  this pointer
-//      -> friend fn are not passes this ptr, since they are not members of the class
+//      -> friend fn are not passed this ptr, since they are not members of the class
 //      -> static member fn do not have this ptr
 class c1
 {
@@ -16,7 +16,8 @@ int main()
 {
     class c1 c(24);
 
-    int *ptr = &c.data;     // pointer to a data member
+    int *ptr = &c.data;     // pointer to a public data member
+
     cout << "ptr = " << ptr;
     cout << endl;
     cout << "*ptr = " << *ptr;
