@@ -35,6 +35,12 @@ T1 Add (T1 a, char b)
     return a+b;
 }
 
+template<typename T1>
+T1 Subtract (T1 a, T1 b) {
+      static_assert(std::is_integral<T1>::value, "Subtract() may be used with integral types only.");
+      return a-b;
+}
+
 int main()
 {
     cout << Add(5,6) << endl;
@@ -42,4 +48,9 @@ int main()
     cout << Add(static_cast<string>("String with "), static_cast<string>("String")) << endl;
     cout << Add(static_cast<string>("String with number: "), static_cast<int>(007)) << endl;
     cout << Add(static_cast<string>("String with Character: "), 'a') << endl;
+
+    cout << Subtract(5,6) << endl;
+
+    // Causes compiler error because of static_assert in Subtract
+//  cout << Subtract(5.5,4.1) << endl;
 }
