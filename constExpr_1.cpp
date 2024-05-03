@@ -14,5 +14,6 @@ int main () {
 }
 
 // when debugging a non-optimised Debug build,
-// you can tell whether a constexpr function is being evaluated at compile time by putting a breakpoint inside it. If the breakpoint is hit, the function was called at run-time.
+// you can tell whether a constexpr function is being evaluated at compile time by putting a breakpoint inside it. 
+// If the breakpoint is hit, the function was called at run-time.
 // If not, then the function was called at compile time.
