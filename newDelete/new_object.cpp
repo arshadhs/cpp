@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// array of objects allocated using new
+// Array of objects, allocated using new
 
 class c1 {
         int data;

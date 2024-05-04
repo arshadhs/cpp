@@ -36,7 +36,7 @@ int main()
     // can't access derived member with base ptr
     // cout << "bPtr = " << bPtr->get_derData();;
 
-    // however you can cast as base ptr to derived class asnd then access derived class data members
+    // however you can cast as base ptr to derived class and then access derived class data members
     cout << "((derived *)bPtr)->get_derData = " << ((derived *)bPtr)->get_derData();
     cout << endl;
 

@@ -10,7 +10,7 @@ class c1{
         c1(int i) { cout << "\nConstructor"; val = i;}      
         ~c1() { cout << "\nDestructor"; }
 
-        void neg (c1 &obj) { obj.val = -val;}
+        void neg (c1 &obj) { obj.val = -val;}   // reference object as an argument
 };
 
 int main()
