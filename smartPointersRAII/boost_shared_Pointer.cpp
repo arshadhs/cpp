@@ -1,6 +1,8 @@
 #include <iostream>
-#include <C:\study\boost_1_39_0\boost\smart_ptr\shared_ptr.hpp>
+#include<boost\_shared_Pointer.cpp>
+//#include <C:\study\boost_1_39_0\boost\smart_ptr\shared_ptr.hpp>
 
+//ToDo: Fix Compilation issue
 
 int main ()
 {
