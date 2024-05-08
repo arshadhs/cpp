@@ -1,12 +1,12 @@
 /*
 Lambda: defins an anonymous function object (a closure) right at the location where it's invoked or passed as an argument to a function
 
-1) capture clause (Also known as the lambda-introducer in the C++ specification.)
-2) parameter list Optional. (Also known as the lambda declarator)
-3) mutable specification Optional.
-4) exception-specification Optional.
-5) trailing-return-type Optional.
-6) lambda body.
+1) capture clause   (Also known as the lambda-introducer in the C++ specification.)
+2) parameter list   (Also known as the lambda declarator)       Optional
+3) mutable specification                                        Optional
+4) exception-specification                                      Optional
+5) trailing-return-type                                         Optional
+6) lambda body
 */
 #include <iostream>
 
