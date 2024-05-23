@@ -16,7 +16,7 @@ int main () {
     auto fn = [](int a, int b) {return a + b;};
     cout << fn(7, 3) << endl;
 
-    auto n = [](int a, int b) { return a-b; } (7, 5);   // call lambda expression immediately
+    auto n = [](int a, int b) { return a-b; } (7, 5);   // when followed by (), calls lambda expression immediately
     cout << n << endl;
 
     return 0;
