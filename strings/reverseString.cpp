@@ -24,6 +24,12 @@ class Solutions {
 
             return s;
         }
+
+        void reverseRecursion(string &s, int i, int n) {
+            if (i >= n) return;
+            swap(s[i], s[n]);
+            reverseRecursion(s, i+1, n-1);
+        }
 };
 
 int main () {
@@ -31,5 +37,7 @@ int main () {
     string str = "Hello How are you";
     obj.reverseString("Hello How are you");
     cout << endl << obj.myRev(const_cast<char *>(str.c_str()));
+    obj.reverseRecursion(str, 0, str.length()-1);
+    cout << endl << str;
     return 0;
 }
