@@ -9,7 +9,7 @@ using namespace std;
 
 void xHandler (int ex) {
     try {    
-        if (ex <0 || ex  > numeric_limits<int>::max()) throw ("Too big!!!");
+        if (ex <0 || ex  > numeric_limits<int>::max()) throw ("Too small or too big!!!");
         else throw (ex);
     }
     catch(const int &e) {
